@@ -1,0 +1,109 @@
+:root {
+  carousel {
+    height: 100%;
+    min-height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .selector{
+    width:1.5rem!important;
+    height:.5rem;
+    border:1px solid black;
+    border-radius:50%;
+    margin:.5rem .25rem;
+    display:inline-block;
+  }
+
+  .prev-button {
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    margin:auto;
+    z-index: 3;
+    color:white;
+    line-height:200px;
+  }
+
+  .next-button {
+    position: absolute;
+    top:0;
+    bottom: 0;
+    right: 0;
+    margin:auto;
+    z-index: 2;
+    color:white;
+    line-height:200px;
+  }
+
+}
+
+.item {
+  position:absolute;
+  top:0;
+}
+.wrap {
+  width: 100%;
+  overflow: hidden;
+  position:relative;
+}
+
+.carousel-control-next-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 30 30'%3e%3cpath d='M7.33 24l-2.83-2.829 9.339-9.175-9.339-9.167 2.83-2.829 12.17 11.996z'/%3e%3c/svg%3e");
+}
+.carousel-control-prev-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 30 30'%3e%3cpath d='M16.67 0l2.83 2.829-9.339 9.175 9.339 9.167-2.83 2.829-12.17-11.996z'/%3e%3c/svg%3e");
+}
+
+a.carousel-control-next-icon,
+a.carousel-control-prev-icon
+{
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-color: black;
+
+}
+.carousel_prev-button,
+.carousel_next-button
+{
+  position: absolute;
+  z-index: 2;
+  opacity:0.5;
+  line-height: 200px;
+  background-color: transparent;
+  text-align:center;
+  cursor:pointer;
+}
+
+.carousel_next-button:hover,
+.carousel_prev-button:hover {
+  opacity:.8;
+  transition: opacity 0.25s ease;
+}
+
+.carousel_prev-button {
+  top:0;
+  bottom: 0;
+  left: 0;
+}
+
+.carousel_next-button {
+  top:0;
+  bottom: 0;
+  right: 0;
+}
+.selectors {
+  text-align:center;
+}
+
+.selector{
+  width:.5rem;
+  height:.5rem;
+  border:1px solid black;
+  border-radius:50%;
+  margin:.5rem .25rem;
+  display:inline-block;
+  cursor:pointer;
+}

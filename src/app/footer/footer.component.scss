@@ -1,0 +1,27 @@
+:host {
+
+  .ads-button-left {
+    padding: 1em 4em;
+    margin-right: 1em;
+    border-radius: 10px;
+  }
+
+  .ads-button-right {
+    padding: 1em 4em;
+    color: #ededed;
+    background-color: transparent;
+    border-radius: 10px;
+  }
+
+  @media (max-width: 480px) {
+    .ads-button-left {
+      margin-right: 0;
+      padding: .5em 2em;
+    }
+
+    .ads-button-right {
+      padding: .5em 2em;
+    }
+  }
+
+}

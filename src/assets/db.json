@@ -1,0 +1,58 @@
+{
+  "onboard": [
+    {
+      "id": 0,
+      "title": "",
+      "subtitle": "Trade with ADSS. Experience exceptional on every level."
+    },
+    {
+      "id": 1,
+      "title": "Final Steps",
+      "subtitle": "Proof of Address",
+      "list": [
+        {
+          "label": "You can upload one of the following documents as proof of residence:",
+          "terms": [
+            "Utility bill (DEWA, SEWA, ...)",
+            "House contract (Lease contract, Title deed, Sales agreement)",
+            "Bank statement with an address"
+          ]
+        },
+        {
+          "label": "kindly upload clear and readable scans of the document (PDF)"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Final Steps",
+      "subtitle": "Terms & Conditions",
+      "chk": [
+        {
+          "label": "I have read, understood and agreed to the following documents:",
+          "terms": [
+            "terms of business",
+            "Order execution policy",
+            "Conflict of interest Policy",
+            "Complains Procedures",
+            "Key Warning Disclosure",
+            "Risk Warning Disclosure",
+            "Privacy Policy"
+          ]
+        },
+        {
+          "label": "I consider the Company products offered (as relevant) as being suitable for me",
+          "terms": [
+            "terms of business",
+            "Order execution policy",
+            "Conflict of interest Policy",
+            "Complains Procedures",
+            "Key Warning Disclosure",
+            "Risk Warning Disclosure",
+            "Privacy Policy"
+          ]
+        }
+      ]
+    }
+  ]
+}

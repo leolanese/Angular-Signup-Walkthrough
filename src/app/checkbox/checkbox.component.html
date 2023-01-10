@@ -1,0 +1,22 @@
+<mat-card class="result">
+  <mat-card-content>
+    <section *ngFor="let ing of valuesToDisplay; let i = index" class="example-section">
+      <mat-checkbox
+        [(ngModel)]="ing.checked">
+        {{ing.name}}
+      </mat-checkbox>
+    </section>
+  </mat-card-content>
+</mat-card>
+
+<mat-card class="result">
+  <mat-card-content>
+    <section class="example-section">
+      <mat-checkbox (change)="updateCheck()"
+                    class="example-margin"
+                    [(ngModel)]="selectAll">
+        Select All
+      </mat-checkbox>
+    </section>
+  </mat-card-content>
+</mat-card>

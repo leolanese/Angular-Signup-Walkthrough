@@ -1,0 +1,67 @@
+import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { MaterialExampleModule } from '../material.modules';
+import { AppRoutingModule } from './app-routing.module';
+import { AppComponent } from './app.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { StepsComponent } from './steps/steps.component';
+import { FormsModule, ReactiveFormsModule } from "@angular/forms";
+import { CommonModule } from "@angular/common";
+import { FileuploadComponent } from "./upload/upload.component";
+import { FormsComponent } from "./forms/forms.component";
+import { ElementsComponent } from "./elements/elements.component";
+import { CheckboxComponent } from "./checkbox/checkbox.component";
+import { LogoComponent } from "./logo/logo.component";
+import { HttpClientModule } from "@angular/common/http";
+import { FooterComponent } from "./footer/footer.component";
+
+import { CarouselComponent } from '../app/carousel/carousel.component';
+import { DuplicateDirective } from "./carousel/duplicate.directive";
+import {BlueComponent} from "./components/blue.component";
+import {RedComponent} from "./components/red.component";
+import {SignUp} from "./components/yellow.component";
+
+@NgModule({
+  declarations: [
+    AppComponent,
+    StepsComponent,
+    FileuploadComponent,
+    FormsComponent,
+    ElementsComponent,
+    CheckboxComponent,
+    LogoComponent,
+    FooterComponent,
+    CarouselComponent,
+    DuplicateDirective,
+    BlueComponent,
+    RedComponent,
+    SignUp
+
+  ],
+  imports: [
+    CommonModule,
+    BrowserModule,
+    AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule,
+    HttpClientModule,
+    BrowserAnimationsModule,
+    MaterialExampleModule,
+  ],
+  exports: [
+    CommonModule,
+    FormsModule,
+    ReactiveFormsModule,
+    ElementsComponent,
+    StepsComponent,
+
+    FooterComponent,
+  ],
+  providers: [
+
+  ],
+  bootstrap: [
+    AppComponent,
+  ]
+})
+export class AppModule { }

@@ -1,0 +1,21 @@
+@import "~@angular/material/prebuilt-themes/deeppurple-amber.css";
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+@import url("//fonts.googleapis.com/earlyaccess/notosanstc.css");
+
+* {
+  font-family: 'Noto Sans TC', 'Times New Roman', Times, serif;
+}
+
+body, * {
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  margin: 0;
+}
+
+html, body {
+  height: 100%;
+}
+
+.body-wrapper {
+  color: #ededed;
+  background-color: #0d1821;
+}

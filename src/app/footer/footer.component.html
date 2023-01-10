@@ -1,0 +1,60 @@
+<section>
+  <button
+    role="presentation"
+    class="ads-button-left"
+    routerLinkActive="active"
+    [routerLink]="[
+    {
+      outlets: {
+        step2: ['udpate'],
+        step3: ['udpate'],
+        step4: ['udpate']
+      }
+    }
+  ]"
+  >Sign up</button>
+
+  <button
+    role="presentation"
+    color="primary"
+    class="ads-button-right"
+    routerLinkActive="active"
+    (click)="goBackward()"
+  >Log in</button>
+</section>
+
+<!--<a-->
+<!--  [routerLink]="[-->
+<!--    {-->
+<!--      outlets: {-->
+<!--        step2: ['back'],-->
+<!--        step3: ['back'],-->
+<!--        step4: ['back']-->
+<!--      }-->
+<!--    }-->
+<!--  ]"-->
+<!--&gt;BACK -</a-->
+<!--&gt;-->
+
+<!--<a routerLink="">RESET -</a>-->
+
+<!--<a [routerLink]="[{ outlets: { step1: ['forward'] } }]">HEADER -</a>-->
+
+<!--<a [routerLink]="[{ outlets: { step2: ['forward'] } }]">NAVIGATION -</a>-->
+
+<!--<a [routerLink]="[{ outlets: { step3: ['forward'] } }]">BODY -</a>-->
+
+<!--<a [routerLink]="[{ outlets: { step4: ['forward'] } }]">RELATED_LINK -</a>-->
+
+<!--<a-->
+<!--  [routerLink]="[-->
+<!--    {-->
+<!--      outlets: {-->
+<!--        step2: ['udpate'],-->
+<!--        step3: ['udpate'],-->
+<!--        step4: ['udpate']-->
+<!--      }-->
+<!--    }-->
+<!--  ]"-->
+<!--&gt;FORWARD -</a-->
+<!--&gt;-->
