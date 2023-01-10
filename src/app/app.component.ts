@@ -1,8 +1,10 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { ApiService } from './api-requests/api.service';
-import { Observable } from 'rxjs';
+import {Observable, of, tap} from 'rxjs';
 import { Onboard } from '../assets/onBoardModule';
 import { ActivatedRoute, NavigationStart, NavigationExtras, Router } from '@angular/router';
+
+import { filter, map } from 'rxjs/operators';
 
 @Component({
   selector: 'app-root',
@@ -18,11 +20,22 @@ export class AppComponent implements OnInit {
   itemsQuantity: number;
   routerLinkDestination = 'step';
 
+  appstate$: Observable<{ [k: string]: any; }>;
+
   public onboard$: Observable<Onboard[]> = this.service.onboard$;
 
   ngOnInit() {
     this.getAllValues();
     this.routerLinkDestination = this.routerLinkDestination +1;
+
+    this.appstate$ = this.router.events.pipe(
+      filter(e => e instanceof NavigationStart),
+      map(() => {
+        const currentState = this.router.getCurrentNavigation();
+        console.log(currentState?.extras?.state);
+        return currentState.extras.state;
+      })
+    );
 
     this.items = [
       { name: '1', img: 'https://via.placeholder.com/200x200' },

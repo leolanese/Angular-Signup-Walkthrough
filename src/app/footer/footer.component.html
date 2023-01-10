@@ -3,12 +3,14 @@
     role="presentation"
     class="ads-button-left"
     routerLinkActive="active"
+    [state]="{ step: 'signup' }"
     [routerLink]="[
     {
       outlets: {
-        step2: ['signup'],
-        step3: ['signup'],
-        step4: ['signup']
+        outlet2: ['signup'],
+        outlet3: ['signup'],
+        outlet4: ['signup'],
+        outlet5: ['signup']
       }
     }
   ]"
@@ -19,12 +21,14 @@
     color="primary"
     class="ads-button-right"
     routerLinkActive="active"
+    [state]="{ step: 'login' }"
     [routerLink]="[
     {
       outlets: {
-        step2: ['login'],
-        step3: ['login'],
-        step4: ['login']
+        outlet2: ['login'],
+        outlet3: ['login'],
+        outlet4: ['login'],
+        outlet5: ['login']
       }
     }
   ]"
@@ -35,7 +39,7 @@
 <!--  [routerLink]="[-->
 <!--    {-->
 <!--      outlets: {-->
-<!--        step2: ['back'],-->
+<!--        outlet2: ['back'],-->
 <!--        step3: ['back'],-->
 <!--        step4: ['back']-->
 <!--      }-->
@@ -46,9 +50,9 @@
 
 <!--<a routerLink="">RESET -</a>-->
 
-<!--<a [routerLink]="[{ outlets: { step1: ['forward'] } }]">HEADER -</a>-->
+<!--<a [routerLink]="[{ outlets: { outlet1: ['forward'] } }]">HEADER -</a>-->
 
-<!--<a [routerLink]="[{ outlets: { step2: ['forward'] } }]">NAVIGATION -</a>-->
+<!--<a [routerLink]="[{ outlets: { outlet2: ['forward'] } }]">NAVIGATION -</a>-->
 
 <!--<a [routerLink]="[{ outlets: { step3: ['forward'] } }]">BODY -</a>-->
 
@@ -58,7 +62,7 @@
 <!--  [routerLink]="[-->
 <!--    {-->
 <!--      outlets: {-->
-<!--        step2: ['udpate'],-->
+<!--        outlet2: ['udpate'],-->
 <!--        step3: ['udpate'],-->
 <!--        step4: ['udpate']-->
 <!--      }-->
