@@ -6,9 +6,9 @@
     [routerLink]="[
     {
       outlets: {
-        step2: ['udpate'],
-        step3: ['udpate'],
-        step4: ['udpate']
+        step2: ['signup'],
+        step3: ['signup'],
+        step4: ['signup']
       }
     }
   ]"
@@ -19,7 +19,15 @@
     color="primary"
     class="ads-button-right"
     routerLinkActive="active"
-    (click)="goBackward()"
+    [routerLink]="[
+    {
+      outlets: {
+        step2: ['login'],
+        step3: ['login'],
+        step4: ['login']
+      }
+    }
+  ]"
   >Log in</button>
 </section>
 

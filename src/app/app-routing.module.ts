@@ -4,27 +4,22 @@ import { RouterModule, Routes } from '@angular/router';
 import { Step1ViewComponent } from "./views/step1/step1.component";
 import { CommonModule } from "@angular/common";
 
-import { BlueComponent } from '../app/components/blue.component';
-import { RedComponent } from '../app/components/red.component';
-import { SignUp } from '../app/components/yellow.component';
+import { BlueComponent } from './views/blue.component';
+import { RedComponent } from './views/red.component';
+import { YellowComponent } from './views/yellow.component';
 
 const routes: Routes = [
   { path: '', component: BlueComponent },
 
-  { path: 'back', component: RedComponent, outlet: 'step1' },
-  { path: 'back', component: RedComponent, outlet: 'step2' },
-  { path: 'back', component: RedComponent, outlet: 'step3' },
-  { path: 'back', component: RedComponent, outlet: 'step4' },
+  { path: 'login', component: BlueComponent, outlet: 'step1' },
+  { path: 'login', component: BlueComponent, outlet: 'step2' },
+  { path: 'login', component: BlueComponent, outlet: 'step3' },
+  { path: 'login', component: BlueComponent, outlet: 'step4' },
 
-  { path: 'forward', component: BlueComponent, outlet: 'step1' },
-  { path: 'forward', component: BlueComponent, outlet: 'step2' },
-  { path: 'forward', component: BlueComponent, outlet: 'step3' },
-  { path: 'forward', component: BlueComponent, outlet: 'step4' },
-
-  { path: 'udpate', component: SignUp, outlet: 'step1' },
-  { path: 'udpate', component: SignUp, outlet: 'step2' },
-  { path: 'udpate', component: SignUp, outlet: 'step3' },
-  { path: 'udpate', component: SignUp, outlet: 'step4' },
+  { path: 'signup', component: YellowComponent, outlet: 'step1' },
+  { path: 'signup', component: YellowComponent, outlet: 'step2' },
+  { path: 'signup', component: YellowComponent, outlet: 'step3' },
+  { path: 'signup', component: YellowComponent, outlet: 'step4' },
 
   { path: '**', redirectTo: '/'}
 ];

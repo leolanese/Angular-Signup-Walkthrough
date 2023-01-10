@@ -14,6 +14,6 @@ import { Component } from '@angular/core';
   `,
   ],
 })
-export class SignUp {
+export class YellowComponent {
 
 }

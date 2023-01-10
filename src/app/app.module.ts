@@ -17,9 +17,10 @@ import { FooterComponent } from "./footer/footer.component";
 
 import { CarouselComponent } from '../app/carousel/carousel.component';
 import { DuplicateDirective } from "./carousel/duplicate.directive";
-import {BlueComponent} from "./components/blue.component";
-import {RedComponent} from "./components/red.component";
-import {SignUp} from "./components/yellow.component";
+
+import {BlueComponent} from "./views/blue.component";
+import {RedComponent} from "./views/red.component";
+import {YellowComponent} from "./views/yellow.component";
 
 @NgModule({
   declarations: [
@@ -35,7 +36,7 @@ import {SignUp} from "./components/yellow.component";
     DuplicateDirective,
     BlueComponent,
     RedComponent,
-    SignUp
+    YellowComponent
 
   ],
   imports: [

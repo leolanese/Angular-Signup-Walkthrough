@@ -1,8 +1,7 @@
-
 <div class="container">
 
   <header>
-    HEADER<router-outlet name="step1"></router-outlet>
+    <router-outlet name="step1"></router-outlet>
   </header>
 
   <!-- dynamic content -->
@@ -10,9 +9,9 @@
     <router-outlet name="step2"></router-outlet>
   </nav>
   <main>
-    BODY<router-outlet name="step3"></router-outlet>
+    <router-outlet name="step3"></router-outlet>
     <div class="parent-wrapper">
-      <div class="child-wrapper">
+      <div class="child-wrapper" routerLink="">
         <logo></logo>
         <h1>{{ onboard$ | async }}</h1>
       </div>
@@ -20,24 +19,20 @@
   </main>
 
   <aside>
-    RELATED LINK<router-outlet name="step4"></router-outlet>
+    <router-outlet name="step4"></router-outlet>
   </aside>
 
   <!-- where to go next -->
   <footer>
-    <router-outlet></router-outlet>
+<!--    <router-outlet></router-outlet>-->
     <footer-component></footer-component>
   </footer>
 
 </div>
 
-
 <!--<router-outlet></router-outlet>-->
-
-
 <!--<a routerLink="">Home</a>-->
 <!--<a routerLink="test">Main outlet nav</a>-->
-
 <!--<a [routerLink]="[{ outlets: { header1: ['step1'], header2: ['step2'] } }]">Outlet Nav</a>-->
 
 

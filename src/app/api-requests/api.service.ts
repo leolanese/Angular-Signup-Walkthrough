@@ -16,16 +16,6 @@ export class ApiService {
 
   constructor(private http: HttpClient) {}
 
-  // Router directions core
-  childPreviousStep: string = 'step0';
-  childNextStep: string = 'step1';
-
-  // push data
-  updateData(dataView: any){
-    this.dataView.next(dataView);
-    console.log('updateData: ', dataView)
-  }
-
   getAllValuesService(): void {
     this.http.get<any[]>(this.apiUrl)
       .pipe(
