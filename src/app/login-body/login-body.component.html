@@ -1,13 +1,7 @@
-
-
-<button mat-flat-button color="primary">Primary</button>
-
-OR
-
 <button
   role="presentation"
   color="primary"
-  class="ads-button-right"
+  class="ads-button-blue w100"
   routerLinkActive="active"
   [state]="{ step: 'login' }"
   [routerLink]="[
@@ -23,4 +17,59 @@ OR
   ]"
 >Log in</button>
 
+<h3 class="tac mt15">OR</h3>
 
+<button
+  role="presentation"
+  class="ads-button-transparent w100 mt15"
+  routerLinkActive="active"
+  [state]="{ step: 'loginApple' }"
+  [routerLink]="[
+    {
+      outlets: {
+        outlet1: ['login'],
+        outlet2: ['login'],
+        outlet3: ['login'],
+        outlet4: ['login'],
+        outlet5: ['login']
+      }
+    }
+  ]"
+>Log in with Apple</button>
+
+<button
+  role="presentation"
+  class="ads-button-transparent w100 mt15"
+  routerLinkActive="active"
+  [state]="{ step: 'loginGoogle' }"
+  [routerLink]="[
+    {
+      outlets: {
+        outlet1: ['login'],
+        outlet2: ['login'],
+        outlet3: ['login'],
+        outlet4: ['login'],
+        outlet5: ['login']
+      }
+    }
+  ]"
+>Log in with Google</button>
+
+
+<button
+  role="presentation"
+  class="ads-button-transparent w100 mt15"
+  routerLinkActive="active"
+  [state]="{ step: 'loginEmail' }"
+  [routerLink]="[
+    {
+      outlets: {
+        outlet1: ['login'],
+        outlet2: ['login'],
+        outlet3: ['login'],
+        outlet4: ['login'],
+        outlet5: ['login']
+      }
+    }
+  ]"
+>Log in with email</button>

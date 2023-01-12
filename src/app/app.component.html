@@ -1,7 +1,8 @@
 <div class="container">
 
   <header>
-    <ng-container *ngIf="appstate$ | async as headerData; else header">
+    <ng-container *ngIf="(appstate$ | async)?.['step'] as headerData; else header">
+      <h1>{{ headerData }}</h1>
       <router-outlet name="outlet1"></router-outlet>
     </ng-container>
 

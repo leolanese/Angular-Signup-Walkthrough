@@ -1,0 +1,41 @@
+:host {
+
+  .w100 {
+    width: 100%;
+  }
+
+  .mt15 {
+    margin-top: 15px;
+  }
+
+  .tac {
+    text-align: center;
+  }
+
+  .ads-button-left {
+    padding: 1em 4em;
+    margin-right: 1em;
+    border-radius: 10px;
+  }
+
+  .ads-button-blue {
+    padding: 1em 4em;
+    color: #ededed;
+    background-color: #1871b2;
+    border-radius: 10px;
+  }
+
+  .ads-button-transparent {
+    padding: 1em 4em;
+    color: #ededed;
+    background-color: transparent;
+    border-radius: 10px;
+  }
+
+  @media (max-width: 480px) {
+    .ads-button-transparent, .ads-button-blue {
+      padding: .5em 2em;
+    }
+  }
+
+}
