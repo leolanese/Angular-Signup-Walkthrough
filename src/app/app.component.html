@@ -1,47 +1,53 @@
 <div class="container">
 
   <header>
-    <router-outlet name="outlet1"></router-outlet>
+    <ng-container *ngIf="appstate$ | async as headerData; else header">
+      <router-outlet name="outlet1"></router-outlet>
+    </ng-container>
+
+    <ng-template #header>
+
+    </ng-template>
   </header>
 
-  <!-- dynamic content -->
   <nav>
-    <router-outlet name="outlet2"></router-outlet>
+    <ng-container *ngIf="appstate$ | async as navData; else nav">
+      <router-outlet name="outlet2"></router-outlet>
+    </ng-container>
+
+    <ng-template #nav>
+
+    </ng-template>
   </nav>
 
   <main>
-    <router-outlet name="outlet3"></router-outlet>
-    <div class="parent-wrapper">
-      <div class="child-wrapper" routerLink="">
-        <logo></logo>
-        <h1>{{ onboard$ | async }}</h1>
+    <ng-container *ngIf="appstate$ | async as mainData; else main">
+      <router-outlet name="outlet3"></router-outlet>
+    </ng-container>
+
+    <ng-template #main>
+      <div class="parent-wrapper">
+        <div class="child-wrapper" routerLink="">
+          <logo></logo>
+          <h1>{{ onBoardingHome$ | async }}</h1>
+        </div>
       </div>
-    </div>
+    </ng-template>
   </main>
 
   <aside>
     <router-outlet name="outlet4"></router-outlet>
   </aside>
 
-  <!-- where to go next -->
   <footer>
-
-    <ng-container *ngIf="appstate$ | async as data; else home">
-      <div *ngIf="data">{{data | json}}</div>
+    <ng-container *ngIf="appstate$ | async as footerData; else footer">
+      <router-outlet name="outlet5"></router-outlet>
     </ng-container>
 
-    <ng-template #home >
+    <ng-template #footer>
       <footer-component></footer-component>
     </ng-template>
-
   </footer>
 
 </div>
-
-<!--<router-outlet></router-outlet>-->
-<!--<a routerLink="">Home</a>-->
-<!--<a routerLink="test">Main outlet nav</a>-->
-<!--<a [routerLink]="[{ outlets: { header1: ['outlet1'], header2: ['outlet2'] } }]">Outlet Nav</a>-->
-
-
 

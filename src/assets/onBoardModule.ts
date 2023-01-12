@@ -1,4 +1,4 @@
-export interface Onboard {
+export interface Onboarding {
   id:       number;
   title:    string;
   subtitle: string;

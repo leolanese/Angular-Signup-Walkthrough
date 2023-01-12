@@ -14,9 +14,11 @@ import { CheckboxComponent } from "./checkbox/checkbox.component";
 import { LogoComponent } from "./logo/logo.component";
 import { HttpClientModule } from "@angular/common/http";
 import { FooterComponent } from "./footer/footer.component";
+import { FooterDisclaimerComponent } from "./footer-disclaimer/footer-disclaimer.component";
 
 import { CarouselComponent } from '../app/carousel/carousel.component';
 import { DuplicateDirective } from "./carousel/duplicate.directive";
+import {LoginBodyComponent} from "./login-body/login-body.component";
 
 import {BlueComponent} from "./views/blue.component";
 import {RedComponent} from "./views/red.component";
@@ -32,6 +34,8 @@ import {YellowComponent} from "./views/yellow.component";
     CheckboxComponent,
     LogoComponent,
     FooterComponent,
+    FooterDisclaimerComponent,
+    LoginBodyComponent,
     CarouselComponent,
     DuplicateDirective,
     BlueComponent,
@@ -55,8 +59,9 @@ import {YellowComponent} from "./views/yellow.component";
     ReactiveFormsModule,
     ElementsComponent,
     StepsComponent,
-
     FooterComponent,
+    FooterDisclaimerComponent,
+    LoginBodyComponent,
   ],
   providers: [
 

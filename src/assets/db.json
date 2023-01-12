@@ -1,12 +1,47 @@
 {
   "onboard": [
     {
-      "id": 0,
+      "id": "home",
       "title": "",
       "subtitle": "Trade with ADSS. Experience exceptional on every level."
     },
+
     {
-      "id": 1,
+      "id": "login",
+      "title": "",
+      "subtitle": "ADSS is regulated by the Securities and Commodities Authority ('SCA') in the United Arab Emirates",
+      "list": [
+        {
+          "label": "",
+          "terms": [
+            ""
+          ]
+        },
+        {
+          "label": ""
+        }
+      ]
+    },
+
+    {
+      "id": "signup",
+      "title": "",
+      "subtitle": "ADSS is regulated by the Securities and Commodities Authority ('SCA') in the United Arab Emirates",
+      "list": [
+        {
+          "label": "",
+          "terms": [
+            ""
+          ]
+        },
+        {
+          "label": ""
+        }
+      ]
+    },
+
+    {
+      "id": "proofOfAddress",
       "title": "Final Steps",
       "subtitle": "Proof of Address",
       "list": [
@@ -23,8 +58,9 @@
         }
       ]
     },
+
     {
-      "id": 2,
+      "id": "termsAndConditions",
       "title": "Final Steps",
       "subtitle": "Terms & Conditions",
       "chk": [

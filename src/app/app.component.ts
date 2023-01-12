@@ -1,8 +1,8 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { ApiService } from './api-requests/api.service';
-import {Observable, of, tap} from 'rxjs';
-import { Onboard } from '../assets/onBoardModule';
-import { ActivatedRoute, NavigationStart, NavigationExtras, Router } from '@angular/router';
+import { Observable } from 'rxjs';
+import { Onboarding } from '../assets/onBoardModule';
+import { ActivatedRoute, NavigationStart, Router } from '@angular/router';
 
 import { filter, map } from 'rxjs/operators';
 
@@ -18,16 +18,14 @@ export class AppComponent implements OnInit {
   title = 'ADSS';
   items: any;
   itemsQuantity: number;
-  routerLinkDestination = 'step';
 
-  appstate$: Observable<{ [k: string]: any; }>;
-
-  public onboard$: Observable<Onboard[]> = this.service.onboard$;
+  public appstate$: Observable<{ [k: string]: any; }>;
+  public onBoardingHome$: Observable<Onboarding[]> = this.service.onBoardingHome$;
 
   ngOnInit() {
     this.getAllValues();
-    this.routerLinkDestination = this.routerLinkDestination +1;
 
+    // state from footer
     this.appstate$ = this.router.events.pipe(
       filter(e => e instanceof NavigationStart),
       map(() => {
@@ -52,26 +50,13 @@ export class AppComponent implements OnInit {
     console.log(this.itemsQuantity)
   }
 
-  // goTo() {
-  //   let objToSend: NavigationExtras = {
-  //     queryParams: {
-  //       steps: 2,
-  //     },
-  //   };
-  //
-  //   this.router.navigate(['/steps2'], {
-  //     state: { steps2: objToSend }
-  //   });
-  // }
-
   getAllValues(): void {
     // just triggering what we need
-    this.service.getFirstPageValuesService()
+    this.service.getInitialValuesService()
   }
 
   notify(note: Notification): void {
     console.log(`${AppComponent.name} handling/routing`, { note });
-
   }
 
 }

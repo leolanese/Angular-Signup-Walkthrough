@@ -1,6 +1,17 @@
-# ADSS onBoard V2.0
+# ADSS onBoarding V2.0
 
 This project was generated under [Angular CLI](https://github.com/angular/angular-cli) version 15.0.4.
+
+## Goal:
+
+The goal is to develop a proof-of-concept that is disposable and allows for experimentation with the updated 
+on-boarding process.
+
+The approach utilizes a modular design, where the navigation flow is built using Angular's routing functionality. 
+This allows for flexibility in making changes to the navigation structure more flexible, as modifying the 
+route array of objects will be sufficient because changes to the navigation can be made without affecting other 
+parts of the application.
+
 
 ## Run Development server
 

@@ -1,0 +1,26 @@
+
+
+<button mat-flat-button color="primary">Primary</button>
+
+OR
+
+<button
+  role="presentation"
+  color="primary"
+  class="ads-button-right"
+  routerLinkActive="active"
+  [state]="{ step: 'login' }"
+  [routerLink]="[
+    {
+      outlets: {
+        outlet1: ['login'],
+        outlet2: ['login'],
+        outlet3: ['login'],
+        outlet4: ['login'],
+        outlet5: ['login']
+      }
+    }
+  ]"
+>Log in</button>
+
+
