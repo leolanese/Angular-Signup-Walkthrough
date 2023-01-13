@@ -1,7 +1,8 @@
 export interface Onboarding {
   id:       number;
-  title:    string;
-  subtitle: string;
+  title?:    string;
+  subtitle?: string;
+  footer?: string;
   list?:    Chk[];
   chk?:     Chk[];
 }

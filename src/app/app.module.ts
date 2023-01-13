@@ -18,7 +18,8 @@ import { FooterDisclaimerComponent } from "./footer-disclaimer/footer-disclaimer
 
 import { CarouselComponent } from '../app/carousel/carousel.component';
 import { DuplicateDirective } from "./carousel/duplicate.directive";
-import {LoginBodyComponent} from "./login-body/login-body.component";
+import { LoginBodyComponent } from "./login-body/login-body.component";
+import { SliderComponent } from "./Slider/slider.component";
 
 import {BlueComponent} from "./views/blue.component";
 import {RedComponent} from "./views/red.component";
@@ -38,10 +39,11 @@ import {YellowComponent} from "./views/yellow.component";
     LoginBodyComponent,
     CarouselComponent,
     DuplicateDirective,
+    SliderComponent,
+
     BlueComponent,
     RedComponent,
     YellowComponent
-
   ],
   imports: [
     CommonModule,

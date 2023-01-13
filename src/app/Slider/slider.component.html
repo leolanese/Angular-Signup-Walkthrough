@@ -1,0 +1,31 @@
+<mat-card>
+  <mat-card-content>
+
+    <section class="example-section">
+      <mat-form-field class="example-margin example-width" appearance="fill">
+        <mat-label>Value</mat-label>
+        <input matInput type="number" [(ngModel)]="value">
+      </mat-form-field>
+    </section>
+
+  </mat-card-content>
+
+  <mat-card-content>
+
+    <div class="example-label-container">
+      <label id="example-name-label" class="example-name-label">Value</label>
+      <label class="example-value-label">{{value}}</label>
+    </div>
+
+    <mat-slider
+      class="example-margin"
+      [disabled]="disabled"
+      [max]="max"
+      [min]="min"
+      [step]="step"
+      [discrete]="thumbLabel"
+      [showTickMarks]="showTicks">
+      <input matSliderThumb [(ngModel)]="value">
+    </mat-slider>
+  </mat-card-content>
+</mat-card>
