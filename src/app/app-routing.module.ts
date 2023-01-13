@@ -13,7 +13,7 @@ const routes: Routes = [
 
   { path: 'signup', component: YellowComponent, outlet: 'outlet1' },
   { path: 'signup', component: YellowComponent, outlet: 'outlet2' },
-  { path: 'signup', component: YellowComponent, outlet: 'outlet3' },
+  { path: 'signup', component: LoginBodyComponent, outlet: 'outlet3' },
   { path: 'signup', component: YellowComponent, outlet: 'outlet4' },
   { path: 'signup', component: FooterDisclaimerComponent, outlet: 'outlet5' },
 

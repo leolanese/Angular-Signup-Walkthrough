@@ -12,7 +12,6 @@ import { Onboarding } from "../../assets/onBoardModule";
 export class LoginBodyComponent  {
   constructor(private location: Location, private service: ApiService) {}
 
-  disclaimer: String;
   public onBoardLogin$: Observable<Onboarding[]> = this.service.onBoardLogin$;
 
   goBackward() {
