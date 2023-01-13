@@ -1,1 +1,3 @@
-<p class="terms">{{ onBoardSignup$ | async }}</p>
+<p class="terms" *ngFor="let item of onBoardSignup$ | async">
+  {{ item.subtitle }}
+</p>

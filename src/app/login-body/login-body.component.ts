@@ -13,7 +13,7 @@ export class LoginBodyComponent  {
   constructor(private location: Location, private service: ApiService) {}
 
   disclaimer: String;
-  public onBoardSignup$: Observable<Onboarding[]> = this.service.onBoardSignup$;
+  public onBoardLogin$: Observable<Onboarding[]> = this.service.onBoardLogin$;
 
   goBackward() {
     this.location.back();

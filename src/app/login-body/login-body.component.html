@@ -17,7 +17,7 @@
   ]"
 >Log in</button>
 
-<h3 class="tac mt15">OR</h3>
+<h3 class="tac mt15">OR *</h3>
 
 <button
   role="presentation"
@@ -73,3 +73,7 @@
     }
   ]"
 >Log in with email</button>
+
+<p class="terms" *ngFor="let item of onBoardLogin$ | async">
+  {{ item?.['disclaimer']  }}
+</p>

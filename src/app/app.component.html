@@ -30,7 +30,11 @@
       <div class="parent-wrapper">
         <div class="child-wrapper" routerLink="">
           <logo></logo>
-          <h1>{{ onBoardingHome$ | async }}</h1>
+
+          <ng-container *ngFor="let item of onBoardingHome$ | async">
+            {{ item.subtitle }}
+          </ng-container>
+
         </div>
       </div>
     </ng-template>

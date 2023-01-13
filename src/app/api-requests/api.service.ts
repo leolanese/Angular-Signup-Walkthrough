@@ -9,11 +9,14 @@ import { Onboarding } from '../../assets/onBoardModule';
 export class ApiService {
   private apiUrl = 'http://localhost:3000/onboard';
 
+  private onBoardingHome = new ReplaySubject<Onboarding[] | undefined>(undefined);
+  public onBoardingHome$: Observable<Onboarding[]> = this.onBoardingHome.asObservable();
+
   private onBoardSignup = new ReplaySubject<Onboarding[] | undefined>(undefined);
   public onBoardSignup$: Observable<Onboarding[]> = this.onBoardSignup.asObservable();
 
-  private onBoardingHome = new ReplaySubject<Onboarding[] | undefined>(undefined);
-  public onBoardingHome$: Observable<Onboarding[]> = this.onBoardingHome.asObservable();
+  private onBoardLogin = new ReplaySubject<Onboarding[] | undefined>(undefined);
+  public onBoardLogin$: Observable<Onboarding[]> = this.onBoardLogin.asObservable();
 
   constructor(private http: HttpClient) {}
 
@@ -35,11 +38,14 @@ export class ApiService {
         tap(heroes => console.log(`getInitialValuesService trigger`)),
       )
       .subscribe((response) => {
-        const home = response.filter(x => x.id === 'home').map(x => x.subtitle);
+        const home = response.filter(x => x.id === 'home');
         this.onBoardingHome.next(home);
 
-        const signup = response.filter(x => x.id === 'signup').map(x => x.subtitle);
+        const signup = response.filter(x => x.id === 'signup');
         this.onBoardSignup.next(signup);
+
+        const login = response.filter(x => x.id === 'login');
+        this.onBoardLogin.next(login);
       });
   }
 }
