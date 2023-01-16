@@ -4,6 +4,7 @@
     class="ads-button-white"
     routerLinkActive="active"
     [state]="{ step: 'signup' }"
+    (click)="onPageUp({step:'signup'})"
     [routerLink]="[
     {
       outlets: {
@@ -22,6 +23,7 @@
     class="ads-button-transparent"
     routerLinkActive="active"
     [state]="{ step: 'login' }"
+    (click)="onPageDown({step:'login'})"
     [routerLink]="[
     {
       outlets: {
@@ -35,6 +37,11 @@
   ]"
   >Log in</button>
 </section>
+
+<!--<p>-->
+<!--  <small> {{ pageNumber$ | async | json }} </small>-->
+<!--</p>-->
+
 
 <!--<a-->
 <!--  [routerLink]="[-->

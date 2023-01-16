@@ -1,8 +1,11 @@
 import { Component } from '@angular/core';
+import { ApiService } from "../api-requests/api.service";
 
 @Component({
   selector: 'yellow-component',
-  template: ``,
+  template: `
+    <small>{{ pageNumber$ | async}}</small>
+  `,
   styles: [
     `
     :host {
@@ -15,5 +18,7 @@ import { Component } from '@angular/core';
   ],
 })
 export class YellowComponent {
+  pageNumber$ = this.service.pageNumber$;
 
+  constructor(private service: ApiService) {}
 }

@@ -19,7 +19,7 @@ import { FooterDisclaimerComponent } from "./footer-disclaimer/footer-disclaimer
 import { CarouselComponent } from '../app/carousel/carousel.component';
 import { DuplicateDirective } from "./carousel/duplicate.directive";
 import { LoginBodyComponent } from "./login-body/login-body.component";
-import { SliderComponent } from "./Slider/slider.component";
+import { SliderComponent } from "./slider/slider.component";
 
 import {BlueComponent} from "./views/blue.component";
 import {RedComponent} from "./views/red.component";

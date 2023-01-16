@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { first, Observable, ReplaySubject, tap} from 'rxjs';
+import {BehaviorSubject, first, Observable, ReplaySubject, tap} from 'rxjs';
 import { Onboarding } from '../../assets/onBoardModule';
 
 @Injectable({
@@ -17,6 +17,12 @@ export class ApiService {
 
   private onBoardLogin = new ReplaySubject<Onboarding[] | undefined>(undefined);
   public onBoardLogin$: Observable<Onboarding[]> = this.onBoardLogin.asObservable();
+
+  public pageNumber$ = new BehaviorSubject<Number>(0);
+
+  pageUp = (val: Object) => this.pageNumber$.next(<Number>val);
+
+  pageDown = (val: Object) => this.pageNumber$.next(<Number>val);
 
   constructor(private http: HttpClient) {}
 
