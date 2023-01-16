@@ -4,14 +4,14 @@ import { ApiService } from "../api-requests/api.service";
 @Component({
   selector: 'blue-component',
   template: `
-    <small>{{ pageNumber$ | async}}</small>
+    <small>{{ pageNumber$ | async | json}}</small>
   `,
   styles: [`
     :host {
       display: block;
       height: 30px;
       width: 30px;
-      background-color: blue;
+      background-color: #00aeffff;
     }
   `]
 })

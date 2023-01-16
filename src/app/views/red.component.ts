@@ -4,7 +4,7 @@ import { ApiService } from "../api-requests/api.service";
 @Component({
   selector: 'red-component',
   template: `
-    <small>{{ pageNumber$ | async}}</small>
+    <small>{{ pageNumber$ | async | json}}</small>
   `,
   styles: [`
     :host {

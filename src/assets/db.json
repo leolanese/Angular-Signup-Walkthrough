@@ -10,7 +10,8 @@
       "id": "login",
       "title": "Log in",
       "subtitle": "ADSS is regulated by the Securities and Commodities Authority ('SCA') in the United Arab Emirates",
-      "disclaimer": " You will need: Emirate ID, Passport or Driving license",
+      "disclaimer_title": "* You will need:",
+      "disclaimer_subtitle": "Emirate ID, Passport or Driving license",
       "list": [
         {
           "label": "",

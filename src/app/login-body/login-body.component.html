@@ -90,6 +90,11 @@ Log in with Google
   ]"
 >Log in with email</button>
 
-<p class="mt15" *ngFor="let item of onBoardLogin$ | async">
-  {{ item?.['disclaimer']  }}
+<p class="mt15 p1 tal" *ngFor="let item of onBoardLogin$ | async">
+  {{ item?.['disclaimer_title']  }}
 </p>
+<p class="p1 tal" *ngFor="let item of onBoardLogin$ | async">
+  {{ item?.['disclaimer_subtitle']  }}
+</p>
+
+
