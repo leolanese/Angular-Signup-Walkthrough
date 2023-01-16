@@ -18,11 +18,11 @@ export class ApiService {
   private onBoardLogin = new ReplaySubject<Onboarding[] | undefined>(undefined);
   public onBoardLogin$: Observable<Onboarding[]> = this.onBoardLogin.asObservable();
 
-  public pageNumber$ = new BehaviorSubject<Number>(0);
+  public pageNumber$ = new BehaviorSubject<any>(0);
 
-  pageUp = (val: Object) => this.pageNumber$.next(<Number>val);
+  pageUp = (val: Object) => this.pageNumber$.next(val);
 
-  pageDown = (val: Object) => this.pageNumber$.next(<Number>val);
+  pageDown = (val: Object) => this.pageNumber$.next(val);
 
   constructor(private http: HttpClient) {}
 

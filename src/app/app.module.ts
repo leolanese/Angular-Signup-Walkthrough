@@ -20,6 +20,7 @@ import { CarouselComponent } from '../app/carousel/carousel.component';
 import { DuplicateDirective } from "./carousel/duplicate.directive";
 import { LoginBodyComponent } from "./login-body/login-body.component";
 import { SliderComponent } from "./slider/slider.component";
+import { HeaderComponent } from "./header/header.component";
 
 import {BlueComponent} from "./views/blue.component";
 import {RedComponent} from "./views/red.component";
@@ -40,6 +41,7 @@ import {YellowComponent} from "./views/yellow.component";
     CarouselComponent,
     DuplicateDirective,
     SliderComponent,
+    HeaderComponent,
 
     BlueComponent,
     RedComponent,

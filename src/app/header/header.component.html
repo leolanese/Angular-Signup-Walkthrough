@@ -1,0 +1,52 @@
+<div class="container">
+  <a class="column1" (click)="onGoBackward()">
+    < BACK
+  </a>
+
+  <!-- Login / Signup button -->
+  <ng-container *ngIf="(pageNumber$ | async)?.['step'] === 'login' ; else singup">
+      <a
+        role="presentation"
+        class="ads-button-white"
+        routerLinkActive="active"
+        [state]="{ step: 'signup' }"
+        [routerLink]="[
+    {
+      outlets: {
+        outlet1: ['signup'],
+        outlet2: ['signup'],
+        outlet3: ['signup'],
+        outlet4: ['signup'],
+        outlet5: ['signup']
+      }
+    }
+  ]"
+      >Sign up</a>
+  </ng-container>
+
+  <ng-template #singup>
+    <a
+      role="presentation"
+      class="ads-button-transparent"
+      routerLinkActive="active"
+      [state]="{ step: 'login' }"
+      [routerLink]="[
+    {
+      outlets: {
+        outlet1: ['login'],
+        outlet2: ['login'],
+        outlet3: ['login'],
+        outlet4: ['login'],
+        outlet5: ['login']
+      }
+    }
+  ]"
+    >Log in</a>
+  </ng-template>
+
+  <div class="column1">
+    {{(pageNumber$ | async)?.['step']}}
+  </div>
+
+  <div class="column2"></div>
+</div>

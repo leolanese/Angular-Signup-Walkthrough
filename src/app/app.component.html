@@ -2,7 +2,7 @@
 
   <header>
     <ng-container *ngIf="(appstate$ | async)?.['step'] as headerData; else header">
-      <h1>{{ headerData }}</h1>
+<!--      <h1 class="tal">{{ headerData }}</h1>-->
       <router-outlet name="outlet1"></router-outlet>
     </ng-container>
 
