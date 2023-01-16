@@ -25,6 +25,7 @@ import { HeaderComponent } from "./header/header.component";
 import {BlueComponent} from "./views/blue.component";
 import {RedComponent} from "./views/red.component";
 import {YellowComponent} from "./views/yellow.component";
+import {BackButtonDirective} from "./directives/back.directive";
 
 @NgModule({
   declarations: [
@@ -40,6 +41,7 @@ import {YellowComponent} from "./views/yellow.component";
     LoginBodyComponent,
     CarouselComponent,
     DuplicateDirective,
+    BackButtonDirective,
     SliderComponent,
     HeaderComponent,
 

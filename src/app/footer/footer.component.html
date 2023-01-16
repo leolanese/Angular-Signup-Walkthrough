@@ -6,16 +6,16 @@
     [state]="{ step: 'signup' }"
     (click)="onPageUp({step:'signup'})"
     [routerLink]="[
-    {
-      outlets: {
-        outlet1: ['signup'],
-        outlet2: ['signup'],
-        outlet3: ['signup'],
-        outlet4: ['signup'],
-        outlet5: ['signup']
-      }
-    }
-  ]"
+          '/',  {
+          outlets: {
+              outlet1: ['signup_1'],
+              outlet2: ['signup_1'],
+              outlet3: ['signup_1'],
+              outlet4: ['signup_1'],
+              outlet5: ['signup_1']
+            }
+          }
+        ]"
   >Sign up</button>
 
   <button
@@ -25,16 +25,16 @@
     [state]="{ step: 'login' }"
     (click)="onPageDown({step:'login'})"
     [routerLink]="[
-    {
-      outlets: {
-        outlet1: ['login'],
-        outlet2: ['login'],
-        outlet3: ['login'],
-        outlet4: ['login'],
-        outlet5: ['login']
-      }
-    }
-  ]"
+          '/',  {
+          outlets: {
+              outlet1: ['login'],
+              outlet2: ['login'],
+              outlet3: ['login'],
+              outlet4: ['login'],
+              outlet5: ['login']
+            }
+          }
+        ]"
   >Log in</button>
 </section>
 

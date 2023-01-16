@@ -17,4 +17,12 @@ export class HeaderComponent {
     // this.router.navigate([this.service.previousStep], {})
     this.location.back();
   }
+
+  onPageUp(val: Object) {
+    this.service.pageUp(val);
+  }
+
+  onPageDown(val: Object) {
+    this.service.pageDown(val);
+  }
 }

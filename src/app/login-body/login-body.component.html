@@ -5,17 +5,17 @@
   routerLinkActive="active"
   [state]="{ step: 'login' }"
   [routerLink]="[
-    {
-      outlets: {
-        outlet1: ['login'],
-        outlet2: ['login'],
-        outlet3: ['login'],
-        outlet4: ['login'],
-        outlet5: ['login']
+    '/',  {
+    outlets: {
+      outlet1: ['login'],
+      outlet2: ['login'],
+      outlet3: ['login'],
+      outlet4: ['login'],
+      outlet5: ['login']
       }
     }
   ]"
->Log in</button>
+><p class="cl">{{(pageNumber$ | async)?.['step']}}</p></button>
 
 <h3 class="tac mt15">or*</h3>
 
@@ -25,7 +25,7 @@
   routerLinkActive="active"
   [state]="{ step: 'loginApple' }"
   [routerLink]="[
-    {
+    '/', {
       outlets: {
         outlet1: ['login'],
         outlet2: ['login'],
@@ -50,7 +50,7 @@
   routerLinkActive="active"
   [state]="{ step: 'loginGoogle' }"
   [routerLink]="[
-    {
+    '/', {
       outlets: {
         outlet1: ['login'],
         outlet2: ['login'],
@@ -78,7 +78,7 @@
   routerLinkActive="active"
   [state]="{ step: 'loginEmail' }"
   [routerLink]="[
-    {
+    '/', {
       outlets: {
         outlet1: ['login'],
         outlet2: ['login'],
