@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from "@angular/core";
+import { Component } from "@angular/core";
 import { Location } from "@angular/common";
 import { Observable } from "rxjs";
 import { ApiService } from "../api-requests/api.service";
@@ -10,11 +10,9 @@ import { Onboarding } from "../../assets/onBoardModule";
   styleUrls: ['./login-body.component.scss']
 })
 export class LoginBodyComponent  {
-  constructor(private location: Location, private service: ApiService) {}
+  constructor(private location: Location, private service: ApiService ) {}
 
   public onBoardLogin$: Observable<Onboarding[]> = this.service.onBoardLogin$;
 
-  goBackward() {
-    this.location.back();
-  }
+  pageNumber$ = this.service.pageNumber$;
 }
