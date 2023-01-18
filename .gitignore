@@ -53,5 +53,8 @@ chrome-profiler-events.json
 speed-measure-plugin.json
 
 # Only exists if Bazel was run
-/bazel-out
+/bazel-outvscode
 
+# Hybrid APP
+/ios
+/android
