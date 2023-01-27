@@ -48,6 +48,12 @@ export class AppComponent implements OnInit {
     ];
     this.itemsQuantity = this.items.length;
     console.log(this.itemsQuantity)
+
+
+    // Activate todos end-point and display on console
+    this.service.getTodos().subscribe((t) => console.log('Todos:', t));
+    this.service.getUsers().subscribe((u) => console.log('Users:', u));
+    this.service.getPosts().subscribe((p) => console.log('Posts:', p));
   }
 
   getAllValues(): void {
