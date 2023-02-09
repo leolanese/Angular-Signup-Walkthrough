@@ -1,4 +1,4 @@
-# ADSS onBoarding V2.0
+# Login/Signup Path V0.0.1
 
 This project was generated under [Angular CLI](https://github.com/angular/angular-cli) version 15.0.4.
 
@@ -55,7 +55,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 ---
 
-## Diagram onBoarding V2
+## Diagram Login/SignUp
 
 ```js
 
