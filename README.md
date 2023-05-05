@@ -1,6 +1,6 @@
 # Login/Signup Path V0.0.1
 
-This project was generated under [Angular CLI](https://github.com/angular/angular-cli) version 15.0.4.
+This project was generated under [Angular CLI](https://github.com/angular/angular-cli) version 15.+ 
 
 ## Goal:
 
@@ -146,7 +146,7 @@ $ curl -GET -H "Content-Type: application/json"  "https://localhost:3000/employe
 [
   {
     "id": 1,
-    "name": "Pankaj",
+    "name": "Leo",
     "salary": "10000"
   },
   {
