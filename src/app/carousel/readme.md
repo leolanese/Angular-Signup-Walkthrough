@@ -1,6 +1,6 @@
 ## Demo
 
-> testing ADS carousel 
+> testing signup carousel 
 
 ```js
 <app-carousel
