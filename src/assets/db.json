@@ -3,7 +3,7 @@
     {
       "id": "home",
       "title": "",
-      "subtitle": "Experience exceptional on every level."
+      "subtitle": "Subtitle 1"
     },
 
     {
@@ -29,7 +29,7 @@
       "id": "signup",
       "title": "Sign up",
       "subtitle": "",
-      "footer": "ADSS is regulated by the Securities and Commodities Authority ('SCA') in the United Arab Emirates",
+      "footer": "sign-in footer",
       "list": [
         {
           "label": "",
@@ -50,15 +50,13 @@
       "footer": "",
       "list": [
         {
-          "label": "You can upload one of the following documents as proof of residence:",
+          "label": "update file",
           "terms": [
-            "Utility bill (DEWA, SEWA, ...)",
-            "House contract (Lease contract, Title deed, Sales agreement)",
-            "Bank statement with an address"
+            "Agree terms"
           ]
         },
         {
-          "label": "kindly upload clear and readable scans of the document (PDF)"
+          "label": "Pdf"
         }
       ]
     },
@@ -70,27 +68,15 @@
       "footer": "",
       "chk": [
         {
-          "label": "I have read, understood and agreed to the following documents:",
+          "label": "I have read, and I agree with terms",
           "terms": [
             "terms of business",
-            "Order execution policy",
-            "Conflict of interest Policy",
-            "Complains Procedures",
-            "Key Warning Disclosure",
-            "Risk Warning Disclosure",
-            "Privacy Policy"
           ]
         },
         {
-          "label": "I consider the Company products offered (as relevant) as being suitable for me",
+          "label": "Updating 2",
           "terms": [
             "terms of business",
-            "Order execution policy",
-            "Conflict of interest Policy",
-            "Complains Procedures",
-            "Key Warning Disclosure",
-            "Risk Warning Disclosure",
-            "Privacy Policy"
           ]
         }
       ]
