@@ -1,4 +1,4 @@
-# Login/Signup Path V0.0.1
+# Login/Signup Path V1.0.0 body structure
 
 This project was generated under [Angular CLI](https://github.com/angular/angular-cli) version 15.+ 
 
