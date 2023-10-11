@@ -12,6 +12,27 @@ This allows for flexibility in making changes to the navigation structure more f
 route array of objects will be sufficient because changes to the navigation can be made without affecting other 
 parts of the application.
 
+### State Adminstration & Observable Subscription pattern
+
+#### Avoid HTTP client observables in components
+
+• HTTP client observables are `cold observable`
+• Requires subscribe to be called to invoke
+• Each subscribe is a new HTTP request, which can `unintentionally be invoked multiple times`
+• Makes observables `more predictable`
+• Makes knowing when to call unsubscribe easier - Always unsubscribe when class is destroyed
+
+### Look out for:
+• Consuming HTTP client directly in components
+• Services exposing HTTP client observables to components / Breaks Reactive approach
+
+### Pattern
+
+• Encapsulating HTTP client methods and responses via service
+• Using HTTP client responses to update state observables / effects
+• (Optional): Creating 'controller' services that only facilitate the flow of data
+
+---
 
 ## Run Development server
 
