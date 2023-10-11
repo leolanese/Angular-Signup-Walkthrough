@@ -16,21 +16,21 @@ parts of the application.
 
 #### Avoid HTTP client observables in components
 
-• HTTP client observables are `cold observable`
-• Requires subscribe to be called to invoke
-• Each subscribe is a new HTTP request, which can `unintentionally be invoked multiple times`
-• Makes observables `more predictable`
-• Makes knowing when to call unsubscribe easier - Always unsubscribe when class is destroyed
+• HTTP client observables are `cold observable`<br>
+• Requires subscribe to be called to invoke<br>
+• Each subscribe is a new HTTP request, which can `unintentionally be invoked multiple times`<br>
+• Makes observables `more predictable`<br>
+• Makes knowing when to call unsubscribe easier - Always unsubscribe when class is destroyed<br>
 
 ### Look out for:
-• Consuming HTTP client directly in components
-• Services exposing HTTP client observables to components / Breaks Reactive approach
+• Consuming HTTP client directly in components<br>
+• Services exposing HTTP client observables to components / Breaks Reactive approach<br>
 
 ### Pattern
 
-• Encapsulating HTTP client methods and responses via service
-• Using HTTP client responses to update state observables / effects
-• (Optional): Creating 'controller' services that only facilitate the flow of data
+• Encapsulating HTTP client methods and responses via service<br>
+• Using HTTP client responses to update state observables / effects<br>
+• (Optional): Creating 'controller' services that only facilitate the flow of data<br>
 
 ---
 
