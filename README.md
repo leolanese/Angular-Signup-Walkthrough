@@ -12,7 +12,7 @@ route array of objects will be sufficient because changes to the navigation can 
 parts of the application. On top of that it is integrating Capacitator (Capacitor is an open source native runtime for building Web Native apps. Create cross-platform iOS, Android, and Progressive Web Apps with JavaScript, HTML, and CSS)
 
 ## Link
-Further information about Angular & Capacitator: https://capacitorjs.com/solution/angular
+Further information about `Angular` & `Capacitator`: https://capacitorjs.com/solution/angular
 
 ---
 
