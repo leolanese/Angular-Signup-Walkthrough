@@ -118,11 +118,11 @@ $ curl -X GET -H "Content-Type: application/json"  "https://localhost:3000/emplo
 [
   {
     "id": 1,
-    "name": "Pankaj",
+    "name": "Leo",
     "salary": "10000"
   },
   {
-    "name": "David",
+    "name": "Tom",
     "salary": "5000",
     "id": 2
   }
@@ -135,7 +135,7 @@ $
 curl -X GET -H "Content-Type: application/json"  "https://localhost:3000/employees/1"
 {
   "id": 1,
-  "name": "Pankaj",
+  "name": "Leo",
   "salary": "10000"
 }
 ```
@@ -144,7 +144,7 @@ curl -X GET -H "Content-Type: application/json"  "https://localhost:3000/employe
 ```
 curl -X POST -H "Content-Type: application/json" -d '{"name": "Lisa","salary": "2000"}' "https://localhost:3000/employees"
 {
-"name": "Lisa",
+"name": "Tom",
 "salary": 2000,
 "id": 3
 }
