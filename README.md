@@ -1,4 +1,4 @@
-# Angular Signup/Signup Walkthrough Path body structure V1.0.0
+# Angular Signin/Signup Walkthrough Path body structure V1.0.0
 
 This project was generated under [Angular CLI](https://github.com/angular/angular-cli) version 15.+ [Updated] Now using capacitator
 
@@ -6,10 +6,9 @@ This project was generated under [Angular CLI](https://github.com/angular/angula
 
 The goal is to develop a POC (proof-of-concept) that is disposable and allows for experimentation with signup processes, Observable Subscription pattern and Capacitator integration.
 
-> The approach POC, utilises a modular design, where the navigation flow is built using Angular's routing functionality. 
-This allows for flexibility in making changes to the navigation structure more flexible, as modifying the 
-route array of objects will be sufficient because changes to the navigation can be made without affecting other 
-parts of the application. On top of that it is integrating Capacitator (Capacitor is an open source native runtime for building Web Native apps. Create cross-platform iOS, Android, and Progressive Web Apps with JavaScript, HTML, and CSS)
+> The approach POC, utilises a modular design, where the navigation flow is built using Angular's routing functionality.
+ 
+This allows for flexibility in making changes to the navigation structure more flexible, as modifying the route array of objects will be sufficient because changes to the navigation can be made without affecting other parts of the application. On top of that it is integrating Capacitator (Capacitor is an open source native runtime for building Web Native apps. Create cross-platform iOS, Android, and Progressive Web Apps with JavaScript, HTML, and CSS)
 
 ## Link
 Further information about `Angular` & `Capacitator`: https://capacitorjs.com/solution/angular
