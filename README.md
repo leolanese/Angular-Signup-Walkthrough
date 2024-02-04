@@ -1,4 +1,4 @@
-# Angular Signin/Signup Walkthrough Path body structure V1.0.0
+# Angular Signin/Signup Walkthrough Path body structure V1.0.1
 
 This project was generated under [Angular CLI](https://github.com/angular/angular-cli) version 15.+ [Updated] Now using capacitator
 
